@@ -82,7 +82,7 @@ const CheckoutForm = ({ appointment }) => {
                 last4: paymentMethod.card.last4,
                 transaction: paymentIntent.client_secret.slice('_secret')[0]
             }
-            const url = `http://localhost:5000/appointments/${_id}`;
+            const url = `https://quiet-everglades-19465.herokuapp.com/${_id}`;
             fetch(url, {
                 method: "PUT",
                 headers: {
